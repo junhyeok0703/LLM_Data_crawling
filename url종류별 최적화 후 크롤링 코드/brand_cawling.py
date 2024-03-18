@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def setup_webdriver():
     options = Options()
-
+    options.add_argument("--headless")
     options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--no-sandbox")

@@ -49,7 +49,7 @@ def collect_reviews(driver, next_list_count):
 
 def main():
     start_time = time.time()
-    target_url = 'https://brand.naver.com/mayflower/products/4414087271'
+    target_url = 'https://brand.naver.com/mayflower/products/2267603786'
     driver = setup_webdriver()
     navigate_to_reviews(driver, target_url)
     df = collect_reviews(driver, 10)  # 'next_list_count'를 조정하여 필요한 만큼의 페이지를 넘길 수 있습니다.
